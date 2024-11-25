@@ -4,34 +4,33 @@ import React from 'react';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
-    <header className="w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <header className="w-full bg-black backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <span className="ml-2 text-xl font-semibold text-gray-900">
-              Zephyr Cloud + Turbo Repo + Rspack
-            </span>
-          </div>
+          <img
+            src="https://cdn.prod.website-files.com/669061ee3adb95b628c3acda/66acd2a968324f3e610c1cae_zephyr%20logo.svg"
+            alt="Zephyr Cloud"
+            className="h-8 w-auto"
+          />
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 text-gray-400">
             <a
               href="https://docs.zephyr-cloud.io/"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="hover:text-gray-600 transition-colors"
             >
               Documentation
             </a>
             <a
               href="https://github.com/ZephyrCloudIO/zephyr-examples"
-              className="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+              className="inline-flex items-center hover:text-gray-600 transition-colors"
             >
               <Github className="h-5 w-5 mr-1" />
               <span>GitHub</span>
             </a>
             <a
               href="https://app.zephyr-cloud.io"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-gray-100 text-black rounded-lg hover:bg-gray-300 transition-colors"
             >
               Get Started
             </a>
@@ -64,14 +63,14 @@ export function Header() {
             </a>
             <a
               href="https://github.com/ZephyrCloudIO/zephyr-examples"
-              className="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+              className="inline-flex items-center text-gray-100 hover:text-gray-200 transition-colors"
             >
               <Github className="h-5 w-5 mr-1" />
               <span>GitHub</span>
             </a>
             <a
               href="https://app.zephyr-cloud.io"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-gray-100 text-black rounded-lg hover:bg-gray-200 transition-colors"
             >
               Get Started
             </a>

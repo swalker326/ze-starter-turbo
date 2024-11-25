@@ -1,4 +1,3 @@
-//@ts-expect-error - federated module
 import RemoteSettings from 'settings/RemoteEntry';
 import RemoteHome from 'home/RemoteEntry';
 
