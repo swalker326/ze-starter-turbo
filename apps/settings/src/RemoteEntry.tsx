@@ -1,5 +1,5 @@
 
-function App() {
+function RemoteEntry() {
   return (
     <div>
       <h1 className="text-3xl text-red-500">Settings</h1>
@@ -7,4 +7,4 @@ function App() {
   );
 }
 
-export default App;
+export default RemoteEntry;

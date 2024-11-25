@@ -1,4 +1,4 @@
-import { ModuleFederationPluginOptions } from "@rspack/core";
+import type { ModuleFederationPluginOptions } from "@rspack/core";
 
 export const mfConfig: ModuleFederationPluginOptions = {
   name: "host",

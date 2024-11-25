@@ -1,4 +1,3 @@
-import { defineConfig } from "@rspack/cli";
 import { rspack } from "@rspack/core";
 import * as RefreshPlugin from "@rspack/plugin-react-refresh";
 import { withZephyr } from "zephyr-rspack-plugin";

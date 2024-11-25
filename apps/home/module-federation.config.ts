@@ -1,10 +1,10 @@
-import { ModuleFederationPluginOptions } from "@rspack/core";
+import type { ModuleFederationPluginOptions } from "@rspack/core";
 
 export const mfConfig: ModuleFederationPluginOptions = {
   name: "home",
   filename: "remoteEntry.js",
   exposes: {
-    "./RemoteEntry": "./src/App.tsx"
+    "./RemoteEntry": "./src/RemoteEntry.tsx"
   },
   shared: ["react", "react-dom"]
 };
