@@ -1,7 +1,7 @@
 
 function RemoteEntry() {
   return (
-    <div>
+    <div className="text-white">
       <h1 className="text-3xl">Routing Demo</h1>
       <p>
         This is a remote entry route. It is a separate bundle that is loaded

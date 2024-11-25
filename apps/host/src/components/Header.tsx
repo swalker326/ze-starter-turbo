@@ -1,5 +1,6 @@
 import { Cloud, Github, Menu, X } from 'lucide-react';
 import React from 'react';
+import { Link } from 'react-router';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -7,11 +8,13 @@ export function Header() {
     <header className="w-full bg-black backdrop-blur-md border-b border-gray-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <img
-            src="https://cdn.prod.website-files.com/669061ee3adb95b628c3acda/66acd2a968324f3e610c1cae_zephyr%20logo.svg"
-            alt="Zephyr Cloud"
-            className="h-8 w-auto"
-          />
+          <Link to="/">
+            <img
+              src="https://cdn.prod.website-files.com/669061ee3adb95b628c3acda/66acd2a968324f3e610c1cae_zephyr%20logo.svg"
+              alt="Zephyr Cloud"
+              className="h-8 w-auto"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 text-gray-400">
