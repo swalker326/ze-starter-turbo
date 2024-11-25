@@ -5,7 +5,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <header className="w-full bg-black backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <img
             src="https://cdn.prod.website-files.com/669061ee3adb95b628c3acda/66acd2a968324f3e610c1cae_zephyr%20logo.svg"
