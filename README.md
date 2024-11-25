@@ -9,6 +9,15 @@ Run the following command:
 ```sh
 npx create-turbo@latest --example https://github.com/swalker326/ze-starter-turbo
 ```
+## Running this example
+For zephyr, a couple things have to happen, 
+- Publish the project to github (or any other git provider)
+  - Public or private, we just care about the git history
+- The remote applications need to be built first, which is handled by turbo so all you have to do is:
+``` bash
+turbo run build
+```
+
 
 ## What's inside?
 
@@ -19,7 +28,7 @@ This Turborepo includes the following packages/apps:
 Rspack Applications
 - `host`: An rspack application and also the host app
 - `home`: Another rspack application with module federation setup being consumed by the host
-- `settings`: A final rspack application used to highlight the built in routing
+- `settings`: A final rspack application used to highlight the routing (react router)
 - `@repo/tailwind-config`: global `tailwind` configurations 
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
