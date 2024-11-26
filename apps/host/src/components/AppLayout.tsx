@@ -1,10 +1,21 @@
 import { Header } from './Header';
-import { NavLink, Outlet } from 'react-router';
+import { Outlet } from 'react-router';
 
-export default function HomeRoute() {
+export default function Layout({
+  showBoundary = false,
+}: { showBoundary?: boolean }) {
   return (
-    <div className="flex flex-col h-full">
-      <Header />
+    <div
+      className={`flex flex-col h-full ${showBoundary ? 'border border-white' : ''}`}
+    >
+      <div>
+        {showBoundary && (
+          <span className="text-white font-bold top-1 left-1 z-10 bg-gradient-to-r from-gray-500 to-black p-1 rounded-lg mt-2 ml-2">
+            Host Application
+          </span>
+        )}
+        <Header />
+      </div>
       <div className="flex-grow">
         <Outlet />
       </div>
