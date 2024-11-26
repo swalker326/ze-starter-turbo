@@ -5,6 +5,9 @@ import './bootstrap.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RemoteEntry />
+    <div className="bg-black text-white items-center flex flex-col justify-center h-screen w-screen">
+      {' '}
+      <RemoteEntry />
+    </div>
   </React.StrictMode>,
 );
