@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 function RemoteEntry() {
   return (
     <div className="h-full bg-gradient-to-b from-neutral-950 p-10 to-black flex flex-col items-center justify-center">
-      <div className="border border-orange-500 border-1 rounded-md p-4">
+      <div className="rounded-md p-4">
         {' '}
         <div className="text-center max-w-2xl">
           <div className="flex items-center justify-center mb-6">
@@ -20,7 +20,7 @@ function RemoteEntry() {
           <div className="flex justify-center gap-4">
             <a
               href="https://app.zephyr-cloud.io"
-              className="px-4 py-2 bg-white text-black rounded-lg hover:bg-neutral-200 transition-colors"
+              className="px-4 py-2 bg-white text-black rounded-lg hover:bg-neutral-200 transition-colors flex items-center justify-center"
             >
               Get Started
             </a>
