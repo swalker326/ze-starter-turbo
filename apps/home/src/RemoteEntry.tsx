@@ -20,7 +20,7 @@ function RemoteEntry() {
           <div className="flex justify-center gap-4">
             <a
               href="https://app.zephyr-cloud.io"
-              className="px-4 py-2 bg-white text-black rounded-lg hover:bg-neutral-200 transition-colors"
+              className="px-4 py-2 bg-white text-black rounded-lg hover:bg-neutral-200 transition-colors flex items-center justify-center"
             >
               Get Started
             </a>

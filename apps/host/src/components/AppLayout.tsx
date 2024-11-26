@@ -6,13 +6,15 @@ export default function Layout({
 }: { showBoundary?: boolean }) {
   return (
     <div
-      className={`flex flex-col h-full ${showBoundary ? 'border border-white' : ''}`}
+      className={`border flex flex-col h-full pt-2 ${showBoundary ? 'border-white' : 'border-transparent'}`}
     >
       <div>
-        {showBoundary && (
+        {showBoundary ? (
           <span className="text-white font-bold top-1 left-1 z-10 bg-gradient-to-r from-gray-500 to-black p-1 rounded-lg mt-2 ml-2">
             Host Application
           </span>
+        ) : (
+          <span className="text-black p-1">t</span>
         )}
         <Header />
       </div>

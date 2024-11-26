@@ -1,6 +1,7 @@
 import { Cloud, Github, Menu, X } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router';
+import { useLocalStorage } from '../useLocalStorage';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
